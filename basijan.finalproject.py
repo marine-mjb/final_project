@@ -1,3 +1,5 @@
+import random
+
 # Ask user to type their username
 username = input("Enter username: ")
 # Ask user to type their password
@@ -8,8 +10,6 @@ if username == "mark" and password == "markie":
 else:
     print("Login failed. Exiting program.")  # Login failed message
     exit()  # Stop the program here
-
-import random
 
 class FlagQuiz:
     """A quiz game where you guess which country a flag belongs to"""
