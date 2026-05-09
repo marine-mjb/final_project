@@ -12,8 +12,6 @@ else:
     exit()  # Stop the program here
 
 class FlagQuiz:
-    """A quiz game where you guess which country a flag belongs to"""
-    
     def __init__(self):
 
         # All the flag questions
@@ -64,7 +62,6 @@ class FlagQuiz:
         self.score = 0  # Start score at zero
     
     def ask_question(self, question_data):
-        """Show one question to the player and check if their answer is right"""
         print("\n")
         print(f"Flag Description: {question_data['description']}")
         print("\nOptions:")
@@ -85,7 +82,6 @@ class FlagQuiz:
                 print("Invalid input! Please enter a, b, c, or d.")
     
     def play(self):
-        """Run the whole flag quiz game"""
         print("\n=== FLAG QUIZ ===")
         print("Guess the country based on the flag description.")
         
@@ -102,8 +98,6 @@ class FlagQuiz:
         print(f"\nFlag Quiz completed! Your score: {self.score}/10")
 
 class GeneralKnowledgeQuiz:
-    """A quiz game with questions about geography and science"""
-    
     def __init__(self):
 
         # All the general knowledge questions
@@ -154,7 +148,6 @@ class GeneralKnowledgeQuiz:
         self.score = 0  # Start score at zero
     
     def ask_question(self, question_data):
-        """Show one question and check if the answer is correct"""
         print("\n")
         print(f"Question: {question_data['question']}")
         print("\nOptions:")
@@ -175,7 +168,6 @@ class GeneralKnowledgeQuiz:
                 print("Invalid input! Please enter a, b, c, or d.")
     
     def play(self):
-        """Run the general knowledge quiz"""
         print("\n=== GENERAL KNOWLEDGE QUIZ ===")
         print("Topics: Geography and Science")
         
@@ -192,8 +184,6 @@ class GeneralKnowledgeQuiz:
         print(f"\nGeneral Knowledge Quiz completed! Your score: {self.score}/10")
 
 class PeriodicTableQuiz:
-    """A quiz about chemical elements - their symbols and atomic numbers"""
-    
     def __init__(self):
 
         # List of elements
@@ -224,7 +214,6 @@ class PeriodicTableQuiz:
         self.score = 0  # Start score at zero
     
     def ask_number_question(self, element):
-        """Ask what the atomic number is for a given element"""
         print("\n")
         print(f"Element: {element['name'].title()}")
         print("What is its atomic number?")
@@ -258,7 +247,6 @@ class PeriodicTableQuiz:
                 print("Invalid input! Please enter a, b, c, or d.")
     
     def ask_symbol_question(self, element):
-        """Ask what the chemical symbol is for a given element"""
         print("\n")
         print(f"Element: {element['name'].title()}")
         print("What is its atomic symbol?")
@@ -292,7 +280,6 @@ class PeriodicTableQuiz:
                 print("Invalid input! Please enter a, b, c, or d.")
     
     def play(self):
-        """Run the periodic table quiz"""
         print("\n=== PERIODIC TABLE QUIZ ===")
         print("You will be asked for atomic numbers and symbols.")
         
@@ -334,7 +321,6 @@ def display_menu():
     print("+---------------------------------+")
 
 def main():
-    """Main program that runs everything"""
     print("\n=== Welcome to Mark's Quiz Challenge! ===\n")
     
     # Keep showing menu until user chooses to exit
